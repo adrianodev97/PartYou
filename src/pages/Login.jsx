@@ -27,9 +27,8 @@ const Login = () => {
                 <h3>Sign In</h3>
                 <input type="text" placeholder="Username..." />
                 <input type="password" placeholder="Password..." />
-                <input type="submit" value="Login" />
-                <Link to="/" className="forgot">Forgot password?</Link>
               </form>
+                <button className="btn-submit">Login</button>
             </div>
             <div className="form signupForm">
               <form>
@@ -38,8 +37,8 @@ const Login = () => {
                 <input type="text" placeholder="Email Adress" />
                 <input type="password" placeholder="Password..." />
                 <input type="password" placeholder="Confirm Password..." />
-                <input type="submit" value="Register" />
               </form>
+              <button className="btn-submit">Register</button>
             </div>
           </div>
         </div>

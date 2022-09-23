@@ -5,7 +5,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #03a9f4;
     transition: 1.5s;
 
     .loginBlock {
@@ -22,9 +21,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(53, 186, 246, .8);
             box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
             border-radius: 5px;
+            transition: 1.5s;
 
             .box {
                 position: relative;
@@ -76,6 +76,17 @@
                 padding: 50px;
                 transition: 0.5s;
 
+                .btn-submit {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 16px;
+                    border: none;
+                    color: #fff;
+                    max-width: 100px;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+
                 form {
 
                     display: flex;
@@ -97,14 +108,6 @@
                         border: 1px solid #333;
                     }
 
-                    input[type="submit"] {
-                        border: none;
-                        color: #fff;
-                        max-width: 100px;
-                        cursor: pointer;
-                        transition: 0.5s;
-                    }
-
                     .forgot {
                         color: #333;
                     }
@@ -114,7 +117,7 @@
             .signinForm {
                 transition-delay: 0.25s;
 
-                input[type="submit"] {
+                .btn-submit {
                     background: #03a9f4;
                 }
             }
@@ -123,7 +126,7 @@
                 left: 100%;
                 transition-delay: 0s;
 
-                input[type="submit"] {
+                .btn-submit {
                     background: #f44648;
                 }
             }
@@ -134,9 +137,13 @@
 
 .active {
 
-    background: #f44648;
-
     .loginBlock {
+
+        .blueBg{
+            background: rgba(246, 107, 109, .8);
+            transition: 1.5s;
+        }
+
         .formBx {
             left: 50%;
 
