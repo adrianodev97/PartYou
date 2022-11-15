@@ -1,4 +1,4 @@
-/* import { util } from "../util/util" */
+import "./home.scss"
 
 const Home = () => {
     return (
