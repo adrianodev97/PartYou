@@ -1,4 +1,4 @@
-import "./presentation.scss"
+
 
 const Presentation = () => {
   return (

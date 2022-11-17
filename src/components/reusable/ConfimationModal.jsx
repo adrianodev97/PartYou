@@ -1,4 +1,4 @@
-import "./confimationModal.scss"
+
 
 const ConfimationModal = () => {
   return(

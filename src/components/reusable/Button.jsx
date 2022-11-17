@@ -1,4 +1,4 @@
-import "./button.scss";
+
 
 const Button = () => {
   const render =

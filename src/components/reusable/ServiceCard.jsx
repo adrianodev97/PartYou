@@ -1,4 +1,4 @@
-import "./serviceCard.scss"
+
 
 const ServiceCard = () => {
   return (

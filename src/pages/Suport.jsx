@@ -1,4 +1,4 @@
-import "./suport.scss" 
+
 
 const Suport = () => {
   return (

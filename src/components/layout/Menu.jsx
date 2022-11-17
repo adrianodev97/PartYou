@@ -1,4 +1,4 @@
-import "./menu.scss"
+
 
 const Menu = () => {
   return (

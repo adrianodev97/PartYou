@@ -1,4 +1,4 @@
-import "./service.scss" 
+
 
 const Service = () => {
   return (
