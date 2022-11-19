@@ -1,0 +1,54 @@
+.deposition-card {
+  width: 350px;
+  height: 225px;
+  box-sizing: border-box;
+  padding: 2.5rem 2.5rem 1rem 2.5rem;
+  background-color: #7d90c460;
+  border-radius: 1rem;
+
+  &:nth-child(2n) {
+    background-color: #F3F7FC;
+  }
+
+  .deposition-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .deposition-info {
+
+
+      p {
+        font-size: .9rem;
+        color: $gray02;
+      }
+    }
+
+    .deposition-profile {
+      display: flex;
+
+      margin-top: 1.5rem;
+
+      .profile-img {
+        width: 52px;
+        height: 52px;
+        
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+      }
+
+      .profile-info {
+        margin: auto 0 auto 1.5rem ;
+
+        h6 {
+          color: $gray01;
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+}

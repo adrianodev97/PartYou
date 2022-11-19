@@ -1,211 +1,255 @@
 .loginPage {
 
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 1.5s;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
 
-  .loginBlock {
-      position: relative;
-      width: 800px;
-      height: 500px;
-      margin: 20px;
+    background-image: url("../../img/confet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 
-      .blueBg {
-          position: absolute;
-          top: 40px;
-          width: 100%;
-          height: 420px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: rgba(53, 186, 246, .8);
-          box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
-          border-radius: 5px;
-          transition: 1.5s;
+    .loginBlock {
+        position: relative;
+        width: 800px;
+        height: 500px;
+        margin: 20px;
 
-          .box {
-              position: relative;
-              width: 50%;
-              height: 100%;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              flex-direction: column;
+        .blueBg {
+            position: absolute;
+            top: 40px;
+            width: 100%;
+            height: 420px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #586da780;
+            box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            transition: 1.5s;
 
-              h2 {
-                  color: #fff;
-                  font-size: 1.2em;
-                  font-weight: 500;
-                  margin-bottom: 10px;
-              }
+            .box {
+                position: relative;
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
 
-              button {
-                  cursor: pointer;
-                  padding: 10px 20px;
-                  background: #fff;
-                  color: #333;
-                  font-size: 16px;
-                  border: none;
-              }
-          }
-      }
+                h2 {
+                    color: #fff;
+                    font-size: 1.2em;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                }
 
-      .formBx {
-          position: absolute;
-          top: 0%;
-          left: 0;
-          width: 50%;
-          height: 100%;
-          background: #fff;
-          z-index: 999;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
-          transition: 0.5s ease-in-out;
-          overflow: hidden;
-          border-radius: 5px;
+                button {
+                    cursor: pointer;
+                    padding: 10px 20px;
+                    background: #fff;
+                    color: #333;
+                    font-weight: 400;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 5px;
 
-          .form {
-              position: absolute;
-              left: 0;
-              width: 100%;
-              padding: 50px;
-              transition: 0.5s;
+                    &:hover {
+                        opacity: .9;
+                    }
+                }
+            }
+        }
 
-              .btn-submit {
-                  width: 100%;
-                  padding: 10px;
-                  font-size: 16px;
-                  border: none;
-                  color: #fff;
-                  max-width: 100px;
-                  cursor: pointer;
-                  transition: 0.5s;
-              }
+        .formBx {
+            position: absolute;
+            top: 0%;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            background: #fff;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 5px 45px rgba(0, 0, 0, 0.25);
+            transition: 0.5s ease-in-out;
+            overflow: hidden;
+            border-radius: 5px;
 
-              form {
+            .form {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                padding: 0 50px 50px;
+                transition: 0.5s;
 
-                  display: flex;
-                  flex-direction: column;
+                .logo {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 2rem;
 
-                  h3 {
-                      font-size: 1.5em;
-                      color: #333;
-                      margin-bottom: 20px;
-                      font-weight: 500;
-                  }
+                    img {
+                        width: 200px;
+                    }
+                }
 
-                  input {
+                .MuiFormGroup-root {
+                    flex-direction: row;
+
+                    .PrivateRadioButtonIcon-checked-9 {
+                        color: $secondary;
+                    }
+                }
+
+                .inline-input {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                }
+
+                .btn-submit {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 16px;
+                    border: none;
+                    color: #fff;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    transition: 0.5s;
+                }
+
+                form {
+
+                    display: flex;
+                    flex-direction: column;
+
+                    h3 {
+                        font-size: 1.5em;
+                        color: $primary;
+                        margin-bottom: 20px;
+                        font-weight: 600;
+                    }
+
+                    /*  input {
                       width: 100%;
                       margin-bottom: 20px;
                       padding: 10px;
                       outline: none;
                       font-size: 16px;
                       border: 1px solid #333;
-                  }
+                  } */
 
-                  .forgot {
-                      color: #333;
-                  }
-              }
-          }
+                    .forgot {
+                        color: #333;
+                    }
+                }
+            }
 
-          .signinForm {
-              transition-delay: 0.25s;
+            .signinForm {
+                transition-delay: 0.25s;
 
-              .btn-submit {
-                  background: #03a9f4;
-              }
-          }
+                .btn-submit {
+                    background: #586da7;
+                }
+            }
 
-          .signupForm {
-              left: 100%;
-              transition-delay: 0s;
+            .signupForm {
+                left: 100%;
+                transition-delay: 0s;
 
-              .btn-submit {
-                  background: #f44648;
-              }
-          }
+                .btn-submit {
+                    background: #f5a336;
+                }
 
-      }
-  }
+                form {
+
+                    h3 {
+                        color: #f5a336;
+                    }
+                }
+            }
+
+        }
+    }
 }
 
 .active {
 
-  .loginBlock {
+    .loginBlock {
 
-      .blueBg{
-          background: rgba(246, 107, 109, .8);
-          transition: 1.5s;
-      }
+        .blueBg {
+            background: #f5a33680;
+            transition: 1.5s;
+        }
 
-      .formBx {
-          left: 50%;
+        .formBx {
+            left: 50%;
 
-          .signinForm {
-              left: -100%;
-              transition-delay: 0s;
-          }
+            .signinForm {
+                left: -100%;
+                transition-delay: 0s;
+            }
 
-          .signupForm {
-              left: 0;
-              transition-delay: 0.25s;
-          }
-      }
-  }
+            .signupForm {
+                left: 0;
+                transition-delay: 0.25s;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 991px) {
-  .loginPage {
+    .loginPage {
 
-      .loginBlock {
-          max-width: 400px;
-          height: 650px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .loginBlock {
+            max-width: 400px;
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-          .blueBg {
-              top: 0;
-              height: 100%;
+            .blueBg {
+                top: 0;
+                height: 100%;
 
-              .box {
-                  position: absolute;
-                  width: 100%;
-                  height: 150px;
-                  bottom: 0;
-              }
+                .box {
+                    position: absolute;
+                    width: 100%;
+                    height: 150px;
+                    bottom: 0;
+                }
 
-              .signin {
-                  top: 0;
-              }
-          }
+                .signin {
+                    top: 0;
+                }
+            }
 
-          .formBx {
-              width: 100%;
-              height: 500px;
-              top: 0;
-              box-shadow: none;
-              border-top-left-radius: 5px;
-              border-top-right-radius: 5px;
-              border-bottom-left-radius: 0;
-              border-bottom-right-radius: 0;
+            .formBx {
+                width: 100%;
+                height: 500px;
+                top: 0;
+                box-shadow: none;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
 
-              .active {
-                  left: 0;
-                  top: 150px;
-                  border-radius: 0;
-                  border-top-left-radius: 0;
-                  border-top-right-radius: 0;
-                  border-bottom-left-radius: 5px;
-                  border-bottom-right-radius: 5px;
-              }
-          }
-      }
-  }
+                &.active {
+                    left: 0;
+                    top: 150px;
+                    border-radius: 0;
+                    border-top-left-radius: 0;
+                    border-top-right-radius: 0;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+        }
+    }
 }
